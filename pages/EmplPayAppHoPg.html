@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/EmplPayAppHoPg.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100; 0,200;0,300;0,400;0,600;1,500&display=swap">
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600 &display=swap">
+   
+    <title>EmployeePayroll App</title>
+    <script defer src="../JavaScript/EmployeePayroll.js"></script>
+</head>
+<body>
+    <!-- UC1 -->
+    <header class="header-content header">
+    <div class="logo-content">
+        <img src="../assert/Image1.png" alt="image" width="50">
+        <div>
+            <span class="emp-text">EMPLOYEE</span><br>
+            <span class="emp-text emp-payroll"> PAYROLL</span>
+        </div>
+    </div>
+</header>
+        <div class="main-content">
+            <!-- UC2 -->
+            <div class="header-content">
+                <div class="emp-detail-text">
+                    Employee Details <div class="emp-count"></div>
+                </div>
+                <a href="../pages/index.html" class="add-button"></a>
+                <img src="../assert/icon.png" alt="icon image" height="40px">
+            </div> <!-- header-content -->
+        </div>
+    <table id="display" class="table">
+        <!-- UC3 -->
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>salary</th>
+            <th>start Date</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>
+                <img  class="profile" src="../assert/Image7.jpg" width="30" alt="clint image">
+            </td>
+            <td>John Wick</td>
+            <td>Male</td>
+            <td> <div class="dept-label">HR</div>
+                <div class="dept-label">Sales</div>
+                <div class="dept-label">Finance</div>
+            </td>
+            <td>300000</td>
+            <td>1 Nov 2020</td>
+            <td>
+                <img src="../assert/Image2.jpg" width="30" alt=" delete image" id="1" onclick="remove(this)" >
+                <img src="../assert/Image2.jpg" width="30" alt="edit image" id="1" onclick="update(this)">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

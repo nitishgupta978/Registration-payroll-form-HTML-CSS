@@ -1,0 +1,199 @@
+/* <style> */
+html body {
+    margin: 0 ;
+    height: 100%;
+}
+.header {
+    padding: 15px 0;
+    background-color: aliceblue;
+}
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+}
+.logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: c;
+    border: 1px silver;
+    width: 80%;
+}
+
+.logo-content-img {
+     border: solid 0px #0e65b6;
+
+}
+/* using by color change Employee payroll text right side of logo */
+.emp-text {
+    font: normal normal bold 20px/25px montserrat;
+    font-family: "montserrat",seens-serif;
+    color: rgb(60, 121, 101);
+    text-transform:capitalize ;
+}
+/* color change only payroll text */
+.emp-payroll{
+    color: #0e457a;
+}
+*{box-sizing: border-box;}
+
+/* UC2 */
+.form-content {
+    min-height: calc(100% - 80px);
+    background-color: #f0ebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.form {
+    width: 65%;
+    padding: 44px 60px ;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #f5f5f5;
+    border-radius: 8px;
+    opacity: 1;
+}
+.form-head {
+    font: normal normal bold 25px/37px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+.row-content {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom:10px ;
+    align-items: center;
+    border: 0px solid rgb(227, 237, 227);
+}
+.label {
+    min-width: 140px;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+.text {
+    font-size: 16px;
+    color: #42515f;
+    opacity: 1;
+    font-family: Roboto;
+
+}
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid green;
+    border-radius: 4px;
+    resize: vertical;
+}
+/* UC-3 */
+/*  FOR Profile image display in row using class name profile-radio-content */
+
+.profile-radio-content {
+    display: flex;
+    flex-direction: row;
+}
+.profile-radio-content >label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+profile {
+    width: 30px;
+    border: 40px;
+    margin-left: 12px;
+}
+.label{
+    font: normal normal bolder 10px/15px;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+/* UC-5 */
+select {
+    padding: 12px;
+    border: 1px;
+    border-radius: 4px;
+    resize: vertical;
+    font: normal normal 16px Roboto;
+    color: #42515f;
+    background-color: #f5f5f5;
+}
+.buttonParent {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/* UC-6 */
+.button {
+    font-size: 20px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    font-weight: 400;
+    min-width: 140px;
+    padding: 7px 7px;
+    border: 1px solid #707070;
+    cursor: pointer;
+}
+.submitButton {
+    border: none;
+    background-color: #f5f5f5;
+    margin-right: 30px;
+
+}
+.cancelButton {
+    /* margin-left :140px */
+    text-decoration: none;
+    text-align: center;
+}
+@media  only screen and (max-width:960px) {
+    .cancelButton{
+        margin-left: 0px;
+    }
+    .form {
+        width: 85%;
+        padding: 44px 20px;
+    }
+}
+@media only screen and (max-width:600px) {
+    .form{
+        margin-top: 10px;
+    }
+    .row {
+        flex-direction: column;
+
+    }
+    .uploadButton {
+        justify-content: flex-start;
+
+    }
+    .submit-reset {
+        width: 100px;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+    }
+    .submitButton {
+        margin: 0;
+
+    }
+    .buttonParent {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}
